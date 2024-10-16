@@ -1,0 +1,314 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+/*                                                                NAVBAR                                                          */
+.navbar {
+    padding: 20px 50px 0px 50px;
+    background-color: #fff;
+}
+
+/*      ICONS REDES - LINKS     */
+.navbar-icons {
+    gap: 16px;
+}
+.nav-link i {
+    color: #040308;
+}
+.nav-link i:hover {
+    color: #005c62;
+}
+
+/*       LOGO       */
+.navbar-brand {
+    width: 110px;
+    height: 110px;
+}
+.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*        MENU HAMBURGUESA          */
+.navbar-toggler-icon {
+    background-color: #040308;
+    transition: all 0.3s ease-in-out;
+}
+.custom-toggler-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 12px;
+}
+.custom-toggler-icon .line {
+    background-color: #040308;
+    height: 1.8px;
+    width: 100%;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+.custom-toggler-icon:hover .line {
+    background-color: #005c62;
+}
+
+/*          Btn hamburguesa y desplegable: Quitar el contorno y sombras del botón hamburguesa           */
+.navbar-toggler, 
+.btn-close ,
+.btn-close-white {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.navbar-toggler:focus,
+.btn-close:focus,
+.btn-close-white:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+/*        Contendor de columnas         */
+.row {
+    margin: 35px 15px 10px 15px;
+}
+
+/*        Columnas          */
+.columna {
+    height: 570px;
+    padding: 0px;
+}
+
+/*         Columna 1        */
+.columna-1 {
+    display: grid;
+    grid-row: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*         Contenedor: Titulo y Subtitulo          */
+.titulo-subtitulo {
+    grid-row: 1/2;
+    grid-column: 1/3;
+    padding: 35px 0px 0px 0px;
+}
+.titulo-subtitulo .core-features {
+    color: #2d73ff;
+    font-weight: 700;
+}
+.titulo-subtitulo h1 {
+    padding: 7px 0px 13px 0px;
+    color: #040308;
+    font-size: 40px;
+    font-weight: 700;
+}
+.titulo-subtitulo h2 {
+    color: #040308;
+    font-size: 25px;
+}
+.titulo-subtitulo h2 span {
+    color: #828284;
+}
+
+/*              Grupo A y B             */
+.grupo-a {
+    grid-row: 2/3;
+    grid-column: 1/2; ;
+}
+.grupo-b {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.grupo-a img{
+    margin: 7px 0px 25px 7px;
+    width: 50px;
+    height: 50px;
+}
+.grupo-b img {
+    margin: 7px 0px 25px 7px;
+    width: 54px;
+    height: 50px;
+}
+.grupo-a .grupo-b , h5  {
+    font-size: 20px;
+    font-weight: 700;
+    color: #040308;
+}
+.grupo-a .grupo-b , p {
+    color: #828284;
+    font-weight: 500;
+}
+.grupo-a .grupo-b , a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #040308;
+}
+
+ /* Estilos para el enlace y el ícono */
+ .learn-more {
+     position: relative;
+     display: inline-block;
+     text-decoration: none;
+     color: black;
+     font-size: 1rem;
+     padding-bottom: 5px;
+     transition: color 0.3s ease;
+ }
+ /* Estilos para la barra subrayada */
+.learn-more::before {
+    border-radius: 1px;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    margin-left: 1px;
+    margin-top: 4px;
+    background-color: #040308;
+    width: 13px;
+    height: 1.3px;
+ }
+ .learn-more::after {
+    border-radius: 1px;
+    margin-left: 1px;
+    margin-top: 4px;
+    background-color: #040308;
+    width: 13px;
+    height: 1.3px;
+
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    transform: scaleX(0);
+    /* Inicialmente oculta la barra */
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+ }
+ .learn-more:hover::after {
+     transform: scaleX(1);
+ }
+
+/* -----> Columna 1 */
+
+
+/* Columna 2 - IMG */
+.columna-2 {
+    margin: 0px;
+    padding: 0px;
+}
+.img-inicio {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 0px 5px 0px 28px;
+}
+
+
+
+/*                                                             Media Queries                                                       */
+
+/* Personalizada */
+@media (max-width: 900px) {
+    .columna-2 .img-inicio {
+        background-color: #2d73ff;
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
+        padding: 0px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    
+    /* Navbar */
+    .navbar {
+        padding: 30px 15px 5px 17px;
+        background-color: #fff;
+    }
+    .navbar-icons .nav-item .nav-link {
+        display: none;
+    }
+
+    .columna-2 {
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+/* Mobile - personalizada*/
+@media (max-width: 500px) {
+
+    .row {
+        margin: 20px 0px 20px 0px;
+    }
+
+    /* Columna 1 - Seccion TituloYsubitutlo + Grupo A + Grupo B  */
+    .columna-1 {
+        min-height: 1000px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row: 1fr 1fr 1fr;
+    }
+    .titulo-subtitulo {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: visible;
+
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding: 35px 0px 0px 0px;
+    }
+
+    .grupo-a {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .grupo-b {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .grupo-a, .grupo-b {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+}
+/* Mobile personalizada */
+@media (max-width: 350px) {
+
+    .navbar {
+        padding: 30px 0px 5px 17px;
+        background-color: #fff;
+    }
+
+    .navbar-start {
+        position: absolute;
+        left: 13px; 
+        transform: translateX(0); 
+        padding-left: 0px; 
+    }
+
+    .titulo-subtitulo h1 {
+        font-size: 35px;
+    }
+
+     .columna-2 .img-inicio {
+        object-fit: cover;
+     }
+    
+}
