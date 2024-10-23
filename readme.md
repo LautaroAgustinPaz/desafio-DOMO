@@ -20,6 +20,7 @@ Puedes ver el desafío en el siguiente enlace:
 - **Bootstrap** - Para un diseño responsivo.
 - **Google Fonts** - Para el uso de la tipografía en toda la página.
 - **Figma** - Para crear el logo desde cero, tomando como referencia el existente. Al tener como referencia una foto pixelada, pensé que la mejor opción sería recrearlo para que la página no pierda calidad.
+
 ![Captura del proceso en Figma](./imgs/captura.jpg)
 
 - **Selector de Color & Herramienta Cuentagotas** - Para obtener con exactitud los mismos colores de la página de ejemplo que seleccioné.
