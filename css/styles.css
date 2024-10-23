@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
-
-
 
 /*                                                                NAVBAR                                                          */
 .navbar {
@@ -12,7 +13,7 @@
     background-color: #fff;
 }
 
-/*      ICONS REDES - LINKS     */
+/*  ICONS REDES - LINKS  */
 .navbar-icons {
     gap: 16px;
 }
@@ -23,22 +24,24 @@
     color: #005c62;
 }
 
-/*       LOGO       */
+/*  LOGO  */
 .navbar-brand {
     width: 110px;
     height: 110px;
 }
+
 .navbar-center {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
-/*        MENU HAMBURGUESA          */
+/*  MENU HAMBURGUESA  */
 .navbar-toggler-icon {
     background-color: #040308;
     transition: all 0.3s ease-in-out;
 }
+
 .custom-toggler-icon {
     display: flex;
     flex-direction: column;
@@ -46,6 +49,7 @@
     width: 35px;
     height: 12px;
 }
+
 .custom-toggler-icon .line {
     background-color: #040308;
     height: 1.8px;
@@ -57,7 +61,7 @@
     background-color: #005c62;
 }
 
-/*          Btn hamburguesa y desplegable: Quitar el contorno y sombras del botón hamburguesa           */
+/*  Btn hamburguesa y desplegable: Quitar el contorno y sombras del botón hamburguesa   */
 .navbar-toggler, 
 .btn-close ,
 .btn-close-white {
@@ -72,77 +76,117 @@
     box-shadow: none;
 }
 
+/*  Menu Desplegable */
+.offcanvas-body {
+    margin-top: 20%;
+    text-align: center;
+    overflow: hidden; 
+}
+.btn-close-custom {
+    background-color: #ffffff; 
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%; 
+    border: 2px solid #040308;
+    opacity: 1; 
+}
+.btn-close-custom:hover {
+    background-color: #005b6225;
+}
+.nav-link-custom {
+    font-weight: 800;
+    font-size: 30px;
+    color: #040308;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.nav-link-custom:hover {
+    color: #005c62;
+    font-style: italic;
+    transform: scale(1.1);
+}
 
-/*        Contendor de columnas         */
+
+
+/*                                                                MAIN                                                          */
 .row {
     margin: 35px 15px 10px 15px;
 }
 
-/*        Columnas          */
+/*  Columnas  */
 .columna {
     height: 570px;
     padding: 0px;
 }
 
-/*         Columna 1        */
+/*  Columna 1  */
 .columna-1 {
     display: grid;
     grid-row: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
 }
 
-/*         Contenedor: Titulo y Subtitulo          */
+/*  Contenedor: Titulo y Subtitulo  */
 .titulo-subtitulo {
     grid-row: 1/2;
     grid-column: 1/3;
     padding: 35px 0px 0px 0px;
 }
+
 .titulo-subtitulo .core-features {
     color: #2d73ff;
     font-weight: 700;
 }
+
 .titulo-subtitulo h1 {
     padding: 7px 0px 13px 0px;
     color: #040308;
     font-size: 40px;
     font-weight: 700;
 }
+
 .titulo-subtitulo h2 {
     color: #040308;
     font-size: 25px;
 }
+
 .titulo-subtitulo h2 span {
     color: #828284;
 }
 
-/*              Grupo A y B             */
+/*  Grupo A y B  */
 .grupo-a {
     grid-row: 2/3;
     grid-column: 1/2; ;
 }
+
 .grupo-b {
     grid-row: 2/3;
     grid-column: 2/3;
 }
+
 .grupo-a img{
     margin: 7px 0px 25px 7px;
     width: 50px;
     height: 50px;
+
 }
 .grupo-b img {
     margin: 7px 0px 25px 7px;
     width: 54px;
     height: 50px;
 }
+
 .grupo-a .grupo-b , h5  {
     font-size: 20px;
     font-weight: 700;
     color: #040308;
 }
+
 .grupo-a .grupo-b , p {
     color: #828284;
     font-weight: 500;
 }
+
 .grupo-a .grupo-b , a {
     text-decoration: none;
     font-weight: 600;
@@ -151,15 +195,16 @@
 
  /* Estilos para el enlace y el ícono */
  .learn-more {
-     position: relative;
-     display: inline-block;
-     text-decoration: none;
-     color: black;
-     font-size: 1rem;
-     padding-bottom: 5px;
-     transition: color 0.3s ease;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
  }
- /* Estilos para la barra subrayada */
+
+ /* Barra subrayada */
 .learn-more::before {
     border-radius: 1px;
     content: '';
@@ -181,7 +226,6 @@
     background-color: #040308;
     width: 13px;
     height: 1.3px;
-
     content: '';
     position: absolute;
     left: 0;
@@ -197,14 +241,12 @@
      transform: scaleX(1);
  }
 
-/* -----> Columna 1 */
-
-
 /* Columna 2 - IMG */
 .columna-2 {
     margin: 0px;
     padding: 0px;
 }
+
 .img-inicio {
     background-color: #fff;
     width: 100%;
@@ -212,12 +254,35 @@
     padding: 0px 5px 0px 28px;
 }
 
+/*                                                                FOOTER                                                          */
+footer {
+    margin-top: 40px;
+    border-top: 1.5px solid #040308;
+}
 
+.descargar-cv {
+    margin-top: 20px;
+}
 
-/*                                                             Media Queries                                                       */
+.btn-cv {
+    padding: 10px 20px;
+    /* Ajusta el padding del botón */
+    border: 1px solid black;
+    /* Si quieres que parezca más como un botón */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    display: inline-block;
+}
+
+.btn-cv:hover {
+    background-color: #005b6221;
+}
+
+/*                                                             MEDIA QUERIES                                                       */
 
 /* Personalizada */
 @media (max-width: 900px) {
+
     .columna-2 .img-inicio {
         background-color: #2d73ff;
         width: 100%;
@@ -288,6 +353,7 @@
         padding: 20px;
     }
 }
+
 /* Mobile personalizada */
 @media (max-width: 350px) {
 
@@ -310,5 +376,4 @@
      .columna-2 .img-inicio {
         object-fit: cover;
      }
-    
 }
