@@ -25,4 +25,5 @@ Puedes ver el desafío en el siguiente enlace:
 
 - **Selector de Color & Herramienta Cuentagotas** - Para obtener con exactitud los mismos colores de la página de ejemplo que seleccioné.
 
-> **Nota:** Este proyecto sigue los principios de buenas prácticas de desarrollo web y está optimizado para dispositivos móviles.
+> [!NOTE]
+> Este proyecto sigue los principios de buenas prácticas de desarrollo web y está optimizado para dispositivos móviles.
